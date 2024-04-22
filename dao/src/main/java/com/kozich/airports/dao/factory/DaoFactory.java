@@ -28,9 +28,6 @@ public class DaoFactory {
             throw new RuntimeException(e);
         }
 
-        //cpds.setJdbcUrl( System.getenv(DB_URL_ENV_NAME) );
-        //cpds.setUser(System.getenv(USER_DB_ENV_NAME));
-        //cpds.setPassword(System.getenv(PASSWORD_DB_ENV_NAME));
         cpds.setJdbcUrl("jdbc:postgresql://localhost:5432/demo");
         cpds.setUser("postgres");
         cpds.setPassword("123456");

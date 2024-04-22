@@ -59,7 +59,6 @@ public class FilterServlet extends HttpServlet {
 
         List<FlightDTO> flights = flightService.getByFilter(filter, page, size);
         resp.getWriter().write(mapper.writeValueAsString(flights));
-        PrintWriter writer = resp.getWriter();
 
     }
 }
